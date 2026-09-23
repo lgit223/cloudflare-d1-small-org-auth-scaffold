@@ -1,0 +1,22 @@
+{
+  "name": "cloudflare-d1-club-auth-skeleton",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc --noEmit",
+    "test": "tsc -p tsconfig.test.json && node --test tests/*.test.mjs",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:migrate:local": "wrangler d1 migrations apply club-auth --local",
+    "db:migrate:remote": "wrangler d1 migrations apply club-auth --remote"
+  },
+  "dependencies": {
+    "jose": "^6.2.10"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260820.0",
+    "typescript": "~6.0.2",
+    "wrangler": "^4.125.0"
+  }
+}

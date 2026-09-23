@@ -1,0 +1,5 @@
+GOOGLE_CLIENT_ID="replace-me.apps.googleusercontent.com"
+GOOGLE_CLIENT_SECRET="replace-me"
+APP_ORIGIN="http://localhost:8787"
+ORG_EMAIL_DOMAIN=""
+SESSION_SECRET="replace-with-at-least-32-random-bytes"
